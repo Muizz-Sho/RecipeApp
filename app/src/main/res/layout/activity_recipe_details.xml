@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screens.RecipeDetails">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orangeColor">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/toolbarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recipe Name"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/whiteColor"
+                    />
+
+                <ImageButton
+                    android:id="@+id/optionDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_delete"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/orangeColor"
+                    android:layout_marginEnd="10dp"/>
+
+                <ImageButton
+                    android:id="@+id/optionEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_edit"
+                    android:layout_toStartOf="@id/optionDelete"
+                    android:background="@color/orangeColor"
+                    android:layout_marginEnd="10dp"/>
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_below="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/recipeImageDetail"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_marginTop="10dp"/>
+
+                <RelativeLayout
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/detailType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Food type"
+                        android:textSize="16dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/blackColor"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/detailRecipeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:hint="Recipe Name"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Ingredient:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/detailRecipeIngredient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Recipe Ingredient"
+                        android:inputType="textMultiLine"
+                        android:padding="10dp"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Steps:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/detailRecipeSteps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Recipe Steps"
+                        android:inputType="textMultiLine"
+                        android:padding="10dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

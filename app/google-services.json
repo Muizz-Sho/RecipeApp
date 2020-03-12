@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "309355353736",
+    "firebase_url": "https://recipeapp-fortitude.firebaseio.com",
+    "project_id": "recipeapp-fortitude",
+    "storage_bucket": "recipeapp-fortitude.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309355353736:android:07ccce2d8a4b390ba4713d",
+        "android_client_info": {
+          "package_name": "com.official.recipeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309355353736-7vnsakgbishqb5ci6l166a0upcn2vl82.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.official.recipeapp",
+            "certificate_hash": "d59704836eedfddccbb26c554e3755f938e7aa3d"
+          }
+        },
+        {
+          "client_id": "309355353736-qcrnjpsfnibhuh77o1mdj4fclbmbapfh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2K3QviqJZK0qHK1VM9N4SVrhXb1g9rrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309355353736-qcrnjpsfnibhuh77o1mdj4fclbmbapfh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

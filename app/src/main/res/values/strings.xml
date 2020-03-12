@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RecipeApp</string>
+    <string name="title_activity_discover">discover</string>
+    <string name="fab_label">Create</string>
+
+
+    <string-array name="recipe_type">
+        <item>Appetizers</item>
+        <item>Breakfast</item>
+        <item>Desserts</item>
+        <item>Dinner</item>
+        <item>Drinks</item>
+    </string-array>
+
+</resources>

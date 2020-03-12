@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screens.addNewRecipe">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addNewRecipeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_check"
+        android:layout_margin="15dp"
+        app:backgroundTint="@color/orangeColor"
+        app:elevation="6dp"
+        android:layout_gravity="bottom|end"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orangeColor">
+
+            <TextView
+                android:id="@+id/toolbarTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add New Recipe"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/whiteColor"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_below="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/recipeImageUpload"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_marginTop="10dp"/>
+
+                <RelativeLayout
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/typeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Food Type:"
+                        android:textSize="16dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/blackColor"/>
+                    <Spinner
+                        android:id="@+id/newRecipeType"
+                        android:entries="@array/recipe_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/typeText"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/typeText" />
+
+                </RelativeLayout>
+
+
+                <EditText
+                    android:id="@+id/newRecipeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:hint="Recipe Name"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:background="@drawable/textbox"/>
+
+                <EditText
+                    android:id="@+id/newRecipeIngredient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:hint="Recipe Ingredient"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:background="@drawable/textbox"/>
+
+                <EditText
+                    android:id="@+id/newRecipeSteps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:hint="Recipe Steps"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:background="@drawable/textbox"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
